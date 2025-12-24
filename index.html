@@ -81,25 +81,56 @@
             border: 1px solid rgba(0,0,0,0.1);
         }
         @media (max-width: 900px) { 
-            /* Sistema il logo per non farlo uscire dai bordi del telefono */
+            /* Sistema il logo per il telefono */
             .logo-container { 
-                transform: skewX(-12deg) scaleX(1); /* Togliamo lo stiramento sul cell */
+                transform: skewX(-12deg) scaleX(1); 
                 margin: 10px 0;
+                max-width: 100%;
             }
             .logo-text { 
-                font-size: 2.5rem; /* Dimensione corretta per restare nello schermo */
-                text-shadow: 3px 3px 0px var(--moto-red); 
+                font-size: 2.2rem; /* Leggermente più piccolo per sicurezza */
+                text-align: center;
             }
-            /* Impagina i contenuti uno sotto l'altro */
+            
+            /* Forza il contenitore a non uscire dai bordi */
             .container { 
                 grid-template-columns: 1fr; 
                 margin-top: 20px; 
+                padding: 0 10px; /* Ridotto il padding laterale */
+                width: 100%;
+                box-sizing: border-box; /* Include padding nel calcolo della larghezza */
             }
-            /* Blocca il movimento laterale della pagina */
+
+            /* Sistema le card dei servizi per il telefono */
+            .service-card {
+                flex-direction: column; /* Icona sopra, testo sotto */
+                align-items: center;
+                text-align: center;
+                padding: 15px;
+            }
+
+            /* Sistema la Sidebar e i suoi pulsanti */
+            .sidebar {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .action-box {
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            /* Impedisce a qualsiasi cosa di uscire a destra */
             body, html {
                 overflow-x: hidden;
                 width: 100%;
                 position: relative;
+            }
+            
+            /* Ingrandisce i pulsanti per il tocco sul cell */
+            .btn {
+                width: 100%;
+                box-sizing: border-box;
             }
         } 
         /* FOOTER CORRETTO */
