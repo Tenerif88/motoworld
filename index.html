@@ -14,7 +14,27 @@
         }
         body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #e5e5e5; color: #222; }
         header { background-color: var(--bg-dark); padding: 40px 20px; text-align: center; border-bottom: 5px solid var(--moto-red); }
-        .logo-container { display: inline-block; transform: scaleX(1.6); }
+/* LOGO EXTRA LARGE E ALLUNGATO */
+        .logo-container { 
+            display: inline-block; 
+            transform: skewX(-12deg) scaleX(1.5); /* Inclinato e allungato del 50% */
+            margin: 20px 0;
+            padding: 0 40px; /* Spazio per non farlo uscire dai bordi */
+        }
+        .logo-text { 
+            font-family: 'Archivo Black', sans-serif; 
+            font-size: 6.5rem; /* Molto più grande di prima */
+            margin: 0; 
+            line-height: 1; 
+            text-transform: uppercase; 
+            color: #fff; 
+            text-shadow: 5px 5px 0px var(--moto-red); 
+            letter-spacing: -3px; /* Lettere più vicine per un look più compatto */
+        }
+        .logo-text span { 
+            color: var(--moto-red); 
+            text-shadow: 5px 5px 0px #fff; 
+        }
         .logo-text { font-family: 'Archivo Black', sans-serif; font-size: 3.2rem; margin: 0; line-height: 1; text-transform: uppercase; color: #fff; }
         .logo-text span { color: var(--moto-red); }
         .subtitle { color: #888; font-size: 1rem; text-transform: uppercase; letter-spacing: 6px; margin-top: 10px; font-weight: 900; }
@@ -158,12 +178,12 @@
                 </ul>
             </div>
 
-            <div class="action-box">
-                <strong>📍 Dove Siamo</strong>
-                <p style="font-size: 0.95rem; line-height: 1.4; margin-bottom: 20px;">Via Amerigo Vespucci 27,<br>95047 Paternò (CT)</p>
-                <a href="https://maps.google.com/?q=Moto+World+Paternò" target="_blank" class="btn btn-maps">Avvia Navigatore</a>
+           <div class="action-box" style="text-align: center;">
+        <strong style="display: block; width: 100%;">📞 Contatti Diretti</strong>
+        <p style="font-size: 1.6rem; font-weight: 900; color: var(--moto-blue); margin: 15px 0;">095 853091</p>
+                <a href="mailto:info.motoworld@tiscali.it" class="btn" style="background: #444; color: white;">Invia Email</a>
+                <a href="http://maps.google.com/?q=Moto+World+Paterno" target="_blank" class="btn btn-maps">Apri Navigatore</a>
                 <a href="https://www.facebook.com/MotoWorldPaterno" target="_blank" class="btn btn-fb">Pagina Facebook</a>
-                <a href="tel:095853091" class="btn btn-phone">Chiama in Negozio</a>
             </div>
             <div class="action-box">
                 <strong>🛠️ I Nostri Brand</strong>
@@ -190,11 +210,6 @@
             </div>
         </div>
     </div>
-
-    <a href="https://wa.me/39095853091" class="whatsapp-float" target="_blank">
-        <svg width="30" height="30" fill="white" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.03 14.69 2 12.04 2z"/></svg>
-    </a>
-
     <footer>
         <p><strong>MOTO WORLD di Scinà Consolato</strong></p>
         <p>Store & Officina Meccanica — Paternò (CT)</p>
